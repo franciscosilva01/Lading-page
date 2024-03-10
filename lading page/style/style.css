@@ -1,0 +1,167 @@
+body {
+  background-color: rgb(34, 34, 34);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#title {
+  flex-direction: column;
+  line-height: 10px;
+}
+
+li {
+  display: inline-block;
+  margin: 20px;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s all;
+}
+
+a:hover {
+  color: rgb(132, 14, 201);
+}
+
+.Inscreva-se-btn {
+  border: 2px solid rgb(132, 14, 201);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.Inscreva-se-btn:hover {
+  background-color: rgb(132, 14, 201);
+  color: #fff;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 45px;
+}
+
+h2 {
+  font-size: 55px;
+  line-height: 10px;
+  font-weight: 800;
+}
+
+span {
+  color: rgb(132, 13, 201);
+}
+
+p {
+  line-height: 23px;
+  max-width: 500px;
+  font-weight: 300;
+}
+
+img {
+  width: 620px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+form [type="submit"] {
+  width: 50%;
+  height: 50px;
+  font-size: 17px;
+  background-color: rgb(132, 13, 201);
+  color: #ffffff;
+  font-weight: bold;
+}
+
+form [type="submit"]:hover {
+  cursor: pointer;
+  background-color: rgba(132, 13, 201, 0.404);
+  transition: 0.3s all;
+}
+
+input {
+  margin-top: 20px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 760px) {
+  body {
+    background-color: #c4c4c4;
+    color: black;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  main {
+    flex-direction: column;
+  }
+  h2 {
+    font-size: 38px;
+    line-height: 30px;
+  }
+  form {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  input {
+    align-self: center;
+  }
+
+  img {
+    display: none;
+  }
+
+  ul {
+    text-align: center;
+  }
+
+  li {
+    color: #000;
+  }
+
+  li:hover {
+    color: rgb(132, 14, 201);
+    transition: 0.3s all;
+  }
+
+  .services {
+    display: none;
+  }
+
+  .Inscreva-se-btn:hover {
+    background-color: #fff;
+    transition: 0.3s;
+  }
+
+  .text {
+    color: rgb(132, 14, 201);
+  }
+
+  span {
+    color: #000;
+  }
+}
